@@ -1,0 +1,25 @@
+[
+    {
+        "name":"hostname",
+        "valor": "roberto"
+    },
+    {
+        "name":"domain",
+        "valor": "pikachu.dw.br"
+    },
+    {
+        "name":"cpu",
+        "valor": "50%",
+        "description": "Intel Celeron"
+    },
+    {
+        "name":"ram",
+        "used": "37%",
+        "free": "63%"
+    },
+    {
+        "name":"disk",
+        "used": "50%",
+        "free": "50%"
+    }
+]

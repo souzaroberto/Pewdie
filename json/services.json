@@ -1,0 +1,26 @@
+[
+    {
+        "name": "dns",
+        "status": "on"
+    },
+    {
+        "name": "dhcp",
+        "status": "off"
+    },
+    {
+        "name": "apache",
+        "status": "on"
+    },
+    {
+        "name": "ftp",
+        "status": "on"
+    },
+    {
+        "name": "nfs",
+        "status": "off"
+    },
+    {
+        "name": "networking",
+        "status": "on"
+    }
+]
