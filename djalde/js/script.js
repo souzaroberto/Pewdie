@@ -14,6 +14,9 @@ let r1=document.getElementById("row1")
 let r2=document.getElementById("row2")
 
 
+
+// montar dash principal
+
 let p= new Operaracao("https://my-json-server.typicode.com/djalde/jsnserver/servicos")
 p.listar().then(servicos => {
 for(let s of servicos) {
@@ -83,9 +86,9 @@ if (s.id <= 3) {
 }
 })
 
+// montar dash secundario
 
-
-
+let x= new Operaracao("https://my-json-server.typicode.com/djalde/infopc/info")
 
 
 
