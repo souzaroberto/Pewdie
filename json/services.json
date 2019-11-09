@@ -1,4 +1,4 @@
-{ serviços: [
+{ "serviços": [
     {
         "name": "dns",
         "status": "on"
