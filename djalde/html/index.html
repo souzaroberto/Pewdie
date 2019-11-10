@@ -13,135 +13,81 @@
 
 <body>
   <!-- NavBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-between">
-        <a class="navbar-brand" href="#">Pewdie Dashboard</a>
-        <a class="navbar-brand" href="https://github.com/djalde/Pewdie" target="blank">GitHub</a>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-between">
+    <a class="navbar-brand" href="#">Pewdie Dashboard</a>
+    <a class="navbar-brand" href="https://github.com/djalde/Pewdie" target="blank">GitHub</a>
+</nav>
 
-  <!-- Área do Dashboard Principal-->
-    <div class="jumbotron bg-transparent">
-        <div class="container">
-            <div class="row" id="row1">
-            </div>
-            <div class="row" id="row2">
-            </div>
+<!-- Área do Dashboard Principal-->
+<div class="jumbotron bg-transparent">
+    <div class="container">
+        <div class="row" id="row1">
+        </div>
+        <div class="row" id="row2">
         </div>
     </div>
-
-
- <!-- Área do Dashboard de Informações -->
- <!-- Obs: fazer codigo js ainda -->
-<div class="card" style="width: 28rem;" >
-  <img src="https://www.extra-imagens.com.br/Informatica/Computadores/1000069286/1054470521/computador-positivo-dual-core-4gb-500gb-tela-19-5-windows-10-stilo-c4500b-19-14005822.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">
-    <table class="table">
-      <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col">Livre</th>
-      <th scope="col">Usado</th>
-  
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Nome</td>
-      <td>Servidor</td>
-      <td>-</td>
-      <td>-</td>
-      
-    </tr>
-    <tr>
-      <td>Domínio</td>
-      <td>pewdie.dw.br</td>
-      <td>-</td>
-      <td>-</td>
-   
-    </tr>
-    <tr>
-      <td>Memória</td>
-      <td>DDR4-8g</td>
-      <td>7GB</td>
-      <td>1GB</td>
-     
-    </tr>
-    <tr>
-      <td>Disco</td>
-      <td>2TERA</td>
-      <td>1TB</td>
-      <td>1TB</td>
-    </tr>
-    <tr>
-      <td>CPU</td>
-      <td>i-35</td>
-      <td>40%</td>
-      <td>60%</td>
-    </tr>
-  </tbody>
-</table></p>
-  </div>
 </div>
 
+<!-- Parte 2 -->
+
+<div class="container">
+<div class="row">
+<!-- Área do Dashboard de Informações -->
+<div id="infor" class="col-md-6"></div>
 
 
-
-
-
-
-
-
-
-
-
-  <!-- Área de gerenciamennto de serviços -->
-    <table class="table">
-  <thead>
-    <tr>
-      <th colspan ="5" scope="col" style="text-align: center;"><h2>SERVIÇOS</h2></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><h5>DNS</h5></td>
-      <td><button type="button" class="btn btn-success">Liga</button></td>
-     <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-     <tr>
-      <td><h5>DHC</h5></td>
+<!-- Área de gerenciamennto de serviços -->
+<div class="col-md-6">
+<table class="table">
+<thead>
+<tr>
+  <th colspan ="5" scope="col" style="text-align: center;"><h2>SERVIÇOS</h2></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><h5>DNS</h5></td>
+  <td><button type="button" class="btn btn-success">Liga</button></td>
+ <td><button type="button" class="btn btn-danger">Desliga</button></td>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+ <tr>
+  <td><h5>DHC</h5></td>
 <td><button type="button" class="btn btn-success">Liga</button></td>
 <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-    <tr>
-       <td><h5>APACHE</h5></td>
-     <td><button type="button" class="btn btn-success">Liga</button></td>
-     <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-    <tr>
-       <td><h5>FTP</h5></td>
-   <td><button type="button" class="btn btn-success">Liga</button></td>
-   <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-    <tr>
-       <td><h5>NFS</h5></td>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+<tr>
+   <td><h5>APACHE</h5></td>
  <td><button type="button" class="btn btn-success">Liga</button></td>
  <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-    <tr>
-       <td><h5>EMAIL</h5></td>
-  <td><button type="button" class="btn btn-success">Liga</button></td>
-  <td><button type="button" class="btn btn-danger">Desliga</button></td>
-     <td><button type="button" class="btn btn-info">Reinicia</button><td>
-    </tr>
-    
-  </tbody>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+<tr>
+   <td><h5>FTP</h5></td>
+<td><button type="button" class="btn btn-success">Liga</button></td>
+<td><button type="button" class="btn btn-danger">Desliga</button></td>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+<tr>
+   <td><h5>NFS</h5></td>
+<td><button type="button" class="btn btn-success">Liga</button></td>
+<td><button type="button" class="btn btn-danger">Desliga</button></td>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+<tr>
+   <td><h5>EMAIL</h5></td>
+<td><button type="button" class="btn btn-success">Liga</button></td>
+<td><button type="button" class="btn btn-danger">Desliga</button></td>
+ <td><button type="button" class="btn btn-info">Reinicia</button><td>
+</tr>
+
+</tbody>
 </table>
+</div>
+</div>
+</div>
+
 
     <script src="/djalde/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
