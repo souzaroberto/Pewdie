@@ -104,7 +104,7 @@ p1.setAttribute("class","card-text");
 carta.appendChild(p1);
 let tab=document.createElement("table");
 p1.appendChild(tab)
-tab.setAttribute("class","table");
+tab.setAttribute("class","table-dark");
 let trp=document.createElement("tr");
 tab.appendChild(trp);
 let tp1=document.createElement("td");
