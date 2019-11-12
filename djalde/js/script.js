@@ -26,20 +26,22 @@ div1.setAttribute("class","col-4")
 div1.setAttribute("class","m-4")
 let card = document.createElement("div");
 card.setAttribute("class","card");
-card.style.width = "18rem";
+card.style.width = "20rem";
 let bod = document.createElement("div");
 bod.setAttribute("class","card-body");
 let serv = document.createElement("h1");
 serv.setAttribute("class","card-title");
 card.style.textAlign="center";
-serv.textContent=s.name;
+serv.textContent=s.name.toUpperCase();
 let stat = document.createElement("h2");
 stat.setAttribute("class","card-title");
 stat.style.textAlign="center";
 let botao = document.createElement("span");
 botao.setAttribute("class","badge")
 botao.setAttribute("class","badge-danger");
-botao.textContent=s.status;
+botao.textContent=s.status.toUpperCase();
+botao.style.padding="5px";
+botao.style.borderRadius="7px";
 stat.appendChild(botao)
 bod.appendChild(serv);
 bod.appendChild(stat);
@@ -56,20 +58,22 @@ div1.setAttribute("class","col-4")
 div1.setAttribute("class","m-4")
 let card = document.createElement("div");
 card.setAttribute("class","card");
-card.style.width = "18rem";
+card.style.width = "20rem";
 let bod = document.createElement("div");
 bod.setAttribute("class","card-body");
 let serv = document.createElement("h1");
 serv.setAttribute("class","card-title");
 card.style.textAlign="center";
-serv.textContent=s.name;
+serv.textContent=s.name.toUpperCase();
 let stat = document.createElement("h2");
 stat.setAttribute("class","card-title");
 stat.style.textAlign="center";
 let botao = document.createElement("span");
 botao.setAttribute("class","badge")
 botao.setAttribute("class","badge-success");
-botao.textContent=s.status;
+botao.textContent=s.status.toUpperCase();
+ botao.style.padding="5px";
+botao.style.borderRadius="7px";
 stat.appendChild(botao)
 bod.appendChild(serv);
 bod.appendChild(stat);
@@ -95,12 +99,15 @@ imag_pc=document.createElement("img");
 imag_pc.setAttribute("src","https://www.extra-imagens.com.br/Informatica/Computadores/1000069286/1054470521/computador-positivo-dual-core-4gb-500gb-tela-19-5-windows-10-stilo-c4500b-19-14005822.jpg");
 imag_pc.setAttribute("class","card-img-top");
 imag_pc.setAttribute("alt","...");
+
+
 carta.appendChild(imag_pc);
 let corpo=document.createElement("div");
 corpo.setAttribute("class","card-body");
 carta.appendChild(corpo);
 let p1=document.createElement("p");
 p1.setAttribute("class","card-text");
+p1.style.marginBottom = "2rem";
 carta.appendChild(p1);
 let tab=document.createElement("table");
 p1.appendChild(tab)
