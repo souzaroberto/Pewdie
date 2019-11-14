@@ -11,11 +11,14 @@ class Operaracao {
 }
 
 
-
+// Áreas de inserção do JavaScript
 let r1=document.getElementById("row1")
 let r2=document.getElementById("row2")
 let inf=document.getElementById("infor")
+let operacoes=document.getElementById("operacoes")
 
+
+// Gera DashBoard Principal
 let p= new Operaracao("https://my-json-server.typicode.com/djalde/jsnserver/servicos")
 p.listar().then(servicos => {
 for(let s of servicos) {
@@ -90,17 +93,16 @@ if (s.id <= 3) {
 })
 
 
+// GeraDashBoard secundario, informações do Pc
 let x= new Operaracao("https://my-json-server.typicode.com/djalde/infopc/info")
 x.listar().then(info => {
 let carta=document.createElement("div");
 carta.setAttribute("class","card")
 carta.style.width = "22rem";
 imag_pc=document.createElement("img");
-imag_pc.setAttribute("src","https://www.extra-imagens.com.br/Informatica/Computadores/1000069286/1054470521/computador-positivo-dual-core-4gb-500gb-tela-19-5-windows-10-stilo-c4500b-19-14005822.jpg");
+imag_pc.setAttribute("src","https://thumbs.dreamstime.com/b/graphs-charts-computer-screen-technical-analysis-financial-data-analyzing-workspace-concept-freelance-135106208.jpg");
 imag_pc.setAttribute("class","card-img-top");
 imag_pc.setAttribute("alt","...");
-
-
 carta.appendChild(imag_pc);
 let corpo=document.createElement("div");
 corpo.setAttribute("class","card-body");
@@ -111,7 +113,8 @@ p1.style.marginBottom = "2rem";
 carta.appendChild(p1);
 let tab=document.createElement("table");
 p1.appendChild(tab)
-tab.setAttribute("class","table-dark");
+tab.setAttribute("class","table-info");
+tab.setAttribute("id","tabela")
 let trp=document.createElement("tr");
 tab.appendChild(trp);
 let tp1=document.createElement("td");
@@ -119,7 +122,7 @@ let tp2=document.createElement("td");
 let tp3=document.createElement("td");
 let tp4=document.createElement("td");
 tp1.textContent="ITEM";
-tp2.textContent="VALOR";
+tp2.textContent="VALUE";
 tp3.textContent="USED";
 tp4.textContent="FREE";
 trp.appendChild(tp1);
@@ -161,16 +164,67 @@ inf.appendChild(carta)
 })
 
 
+// Gera Painel de operacoes (liga/desliga/reinicia)
 
-
-
-
-
-
-
-
-
-
-
-
-
+let se= new Operaracao("https://my-json-server.typicode.com/djalde/jsnserver/servicos");
+se.listar().then(servicos => {
+let tabel=document.createElement("table");
+tabel.setAttribute("class","table");
+tabel.setAttribute("class","table-dark");
+tabel.setAttribute("id","operar1")
+tabel.style.width="100%"
+let thead1=document.createElement("thead");
+tabel.appendChild(thead1);
+let tr2=document.createElement("tr")
+thead1.appendChild(tr2)
+let th2=document.createElement("th");
+th2.setAttribute("colspan","5");
+th2.setAttribute("scope","col");
+th2.style.textAlign="center";
+let texto=document.createElement("h2")
+texto.textContent="SERVICES";
+th2.appendChild(texto);
+tr2.appendChild(th2);
+let corpot=document.createElement("tbody")
+for(se of servicos) {
+  let tr31=document.createElement("tr");
+  let td21=document.createElement("td");
+  let texto2=document.createElement("h2");
+  texto2.textContent=se.name.toUpperCase();
+  td21.appendChild(texto2);
+  tr31.appendChild(td21)
+  let tdbotao1=document.createElement("td");
+  let botao1=document.createElement("button");
+  tdbotao1.appendChild(botao1);
+  botao1.setAttribute("type","button");
+  botao1.setAttribute("class","btn");
+  botao1.setAttribute("class","btn-outline-success");
+  let texto21=document.createElement("h2");
+  texto21.textContent="UP";
+  botao1.appendChild(texto21);
+  tr31.appendChild(tdbotao1);
+  let tdbotao2=document.createElement("td");
+  let botao2=document.createElement("button");
+  tdbotao2.appendChild(botao2);
+  botao2.setAttribute("type","button");
+  botao2.setAttribute("class","btn");
+  botao2.setAttribute("class","btn-outline-danger");
+  let texto22=document.createElement("h2");
+  texto22.textContent="Down";
+  botao2.appendChild(texto22);
+  tr31.appendChild(tdbotao2);
+  let tdbotao3=document.createElement("td");
+  let botao3=document.createElement("button")
+  tdbotao3.appendChild(botao3);
+  botao3.setAttribute("type","button");
+  botao3.setAttribute("class","btn");
+  botao3.setAttribute("class","btn-outline-primary");
+  let texto23=document.createElement("h2");
+  texto23.textContent="Reset";
+  botao3.appendChild(texto23);
+  tr31.appendChild(tdbotao3);
+  corpot.appendChild(tr31)
+}
+tabel.appendChild(corpot)
+operacoes.appendChild(tabel)
+})
