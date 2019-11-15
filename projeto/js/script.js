@@ -113,7 +113,7 @@ p1.style.marginBottom = "2rem";
 carta.appendChild(p1);
 let tab=document.createElement("table");
 p1.appendChild(tab)
-tab.setAttribute("class","table-info");
+tab.setAttribute("class","table-dark");
 tab.setAttribute("id","tabela")
 let trp=document.createElement("tr");
 tab.appendChild(trp);
