@@ -130,7 +130,7 @@ trp.appendChild(tp2);
 trp.appendChild(tp3);
 trp.appendChild(tp4);
 for(i of info) {
-  if (i.nome==="ram" || i.nome==="disk") {
+  if (i.nome==="ram" || i.nome==="disk" || i.nome==="cpu") {
 let tr1=document.createElement("tr");
 tab.appendChild(tr1);
 let th11=document.createElement("td");
